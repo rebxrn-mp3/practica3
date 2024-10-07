@@ -14,7 +14,7 @@ namespace pr1609
                 int x = int.Parse(Console.ReadLine());
             Console.WriteLine("Введите второе слагаемое:");
                 int y = int.Parse(Console.ReadLine());
-            Console.WriteLine("Сумма чисел равна: " + (x + y) + " нахуй");
+            Console.WriteLine("Сумма чисел равна: " + (x + y));
             Console.ReadKey();
                 
         }
