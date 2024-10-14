@@ -19,8 +19,38 @@ namespace dz6
             Console.WriteLine(TransliteTranslate(text));
 
             Console.ReadKey();
+
+            var s = "клавиатура";
+
+
+            var word1 = s
+                .Remove(0, 6)
+                .Remove(1, 3) +
+                s
+                .Remove(0, 4)
+                .Remove(2, 2);
+
+            var word2 =
+                ReverseString(s)
+                .Remove(0, 1)
+                .Remove(2, 6)
+            + s.Remove(0, 2)
+            .Remove(1,7);
+
+
+            Console.WriteLine("Исходное слово - " + s);
+            Console.WriteLine("Первое полученное слово: ");
+            Console.WriteLine(word1);
+            Console.WriteLine("Второе полученное слово: ");
+            Console.WriteLine(word2);
+
+            Console.ReadKey();
         }
 
+        static string ReverseString (string s)
+        {
+            return new string(s.Reverse().ToArray());
+        }
         static string TransliteTranslate(String s)
         {
             return s
