@@ -21,7 +21,11 @@ namespace dz7
             var x = GetNumber("x");
             var y = GetNumber("y");
 
-            Console.WriteLine(" Результат логического выражения: " + CheckArea(x, y));
+            if (CheckArea(x,y))
+                Console.WriteLine("Точка принадлежит указанной области ");
+            else
+                Console.WriteLine("Точка не принадлежит указанной области ");
+
 
             Console.ReadKey();
 
